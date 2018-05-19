@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>See.More</title>
+</head>
+<body>
+
+{% ifequal acc -1 %}
+    <h2>Result</h2>
+{% else %}
+    <h2>Result, the accuracy is {{ acc }}</h2>
+{% endifequal %}
+
+{% for img in imgs %}
+    <img src={{ img }}>
+{% endfor %}
+
+</body>
+</html>

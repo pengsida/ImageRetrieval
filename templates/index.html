@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于内容的在线图像检测平台</title>
+    <style type="text/css" media="all">
+        @import "/static/css/master.css";
+    body
+    {
+        padding:0;margin:0;
+    }
+    </style>
+
+</head>
+<body>
+<img id="bg" src="/static/img/20140110041613114.jpg"/>
+<table id="t"  bordercolor="#FFFFFF"  >
+       <td align="center" onclick="uploadFile()" id="text" >
+           See.More
+           <form enctype="multipart/form-data" action="/search" method="post">
+                <input id="img_input" type="file" accept="image/*" name="img">
+                <input id="img_class" type="text" name="class">
+                <input type="submit" value="搜索">
+            </form>
+       </td>
+</table>
+</body>
+</html>

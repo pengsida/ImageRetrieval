@@ -1,0 +1,31 @@
+/*设置图片的大小位置*/
+#bg{
+    width:100%;height:100%;
+    position:absolute;
+    z-index:-1;
+}
+/*文字字体大小颜色 字母间距*/
+#text
+{
+    font-family:Serif;
+    font-size:100px;
+    color:white;
+    letter-spacing:8px;
+}
+
+/*设置表格位置 边框 内边距*/
+#t
+{
+    top:30%;
+    left:28%;
+    border: solid 1px #FFFFFF;
+    border-width:3px 2px 3px 2px;/*边框宽度，上、右、下、左*/
+    padding:5% 5% 5% 5%; /*内边距，方向顺序同上*/
+    position:absolute;
+
+}
+/*将鼠标放置表格框上的时候 边框变大变粗变黑*/
+#t:hover
+{
+    border: solid 3px  ;
+}
